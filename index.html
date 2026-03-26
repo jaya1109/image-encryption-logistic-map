@@ -4,30 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sudha Portfolio</title>
+<title>Image Encryption Project</title>
 
 <style>
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     background: #f4f6f9;
+    color: #333;
 }
 
 header {
     background: linear-gradient(135deg, #0d47a1, #1976d2);
     color: white;
-    text-align: center;
     padding: 30px;
+    text-align: center;
 }
 
 .container {
     padding: 30px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.card {
+.section {
     background: white;
     padding: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -36,47 +39,113 @@ h2 {
     color: #0d47a1;
 }
 
+ul {
+    line-height: 1.8;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
 .button {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 12px 20px;
     background: #0d47a1;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-top: 10px;
 }
+
+.button:hover {
+    background: #1565c0;
+}
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>🚀 Sudha's Portfolio</h1>
-<p>ECE Student | Unity Developer | IoT Enthusiast</p>
+<h1>🔐 Image Encryption & Decryption</h1>
+<p>Using Logistic Map | Cyber Security Project</p>
 </header>
 
 <div class="container">
 
-<div class="card">
-<h2>🔐 Image Encryption Project</h2>
+<div class="section">
+<h2>📌 Project Overview</h2>
 <p>
-Secures medical images using logistic map-based encryption and decryption.
+This project secures medical images using a logistic map-based chaotic encryption technique.
+Images are converted into an unreadable encrypted format and restored using a secret key.
 </p>
-
-<a class="button" href="https://github.com/jaya1109/Image-Encryption-and-decryption-using-logistic-map-for-medical-field" target="_blank">
-View My Project
-</a>
 </div>
 
-<div class="card">
-<h2>🔐 Image Encryption (Friend's Project)</h2>
-<p>
-Another implementation of logistic map-based secure image encryption.
-</p>
+<div class="section">
+<h2>🎯 Objectives</h2>
+<ul>
+<li>Secure medical image transmission</li>
+<li>Apply chaos theory in encryption</li>
+<li>Prevent unauthorized access</li>
+</ul>
+</div>
 
-<a class="button" href="https://github.com/Aditi1485/Image-Encryption-and-decryption-using-logistic-map-for-medical-field" target="_blank">
-View Project
+<div class="section">
+<h2>🧠 Concept</h2>
+<p>
+The logistic map generates pseudo-random chaotic sequences used for encryption.
+Formula: x(n+1) = r * x(n) * (1 - x(n))
+</p>
+</div>
+
+<div class="section">
+<h2>⚙️ Working Process</h2>
+<ul>
+<li>Input Image</li>
+<li>Grayscale Conversion</li>
+<li>Logistic Sequence Generation</li>
+<li>Encryption (XOR / Pixel Shuffle)</li>
+<li>Decryption using same key</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>📊 Flowchart</h2>
+<img src="flowchart.png" alt="Flowchart">
+</div>
+
+<div class="section">
+<h2>🖼️ Results</h2>
+
+<h3>Original Image</h3>
+<img src="images/input.png">
+
+<h3>Encrypted Image</h3>
+<img src="images/encrypted.png">
+
+<h3>Decrypted Image</h3>
+<img src="images/decrypted.png">
+
+</div>
+
+<div class="section">
+<h2>💻 Source Code</h2>
+<p>Click below to view full implementation:</p>
+
+<a class="button" href="https://github.com/jaya1109/image-encryption-logistic-map" target="_blank">
+🔗 View Code on GitHub
 </a>
+
+</div>
+
+<div class="section">
+<h2>📌 Conclusion</h2>
+<p>
+This project demonstrates secure image encryption using chaos theory,
+ensuring confidentiality and data protection for medical images.
+</p>
 </div>
 
 </div>
